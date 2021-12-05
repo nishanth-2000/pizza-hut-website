@@ -1,0 +1,1 @@
+export { catagoryContent } from "./data";

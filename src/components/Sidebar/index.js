@@ -16,9 +16,9 @@ export default function Sidebar({ isOpen, toggle }) {
         <CloseIcon onClick={toggle} />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to="/veg">Veg Pizza</SidebarLink>
-        <SidebarLink to="/veg">Mix Pizza</SidebarLink>
-        <SidebarLink to="/veg">Full Menu</SidebarLink>
+        <SidebarLink to="/catagory?name=veg">Veg Pizza</SidebarLink>
+        <SidebarLink to="/catagory?name=mix">Mix Pizza</SidebarLink>
+        <SidebarLink to="/catagory?name=full">Full Menu</SidebarLink>
       </SidebarMenu>
       <SidebarWrap>
         <SidebarRoute to="/">Order Now</SidebarRoute>

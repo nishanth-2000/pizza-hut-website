@@ -1,16 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { GlobalStyle } from "./globalStyles";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-import { footerData } from "./components/Footer/data";
+import Catagory from "./components/Catagory";
+import HomePage from "./Screens/HomePage";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Body />
-      <Footer heading="Choose your favorite" footerData={footerData} />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/catagory" component={Catagory} />
+      </Switch>
     </Router>
   );
 }

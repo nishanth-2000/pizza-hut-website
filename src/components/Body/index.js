@@ -16,7 +16,7 @@ export default function Body() {
       <BodyContent>
         <BodyItems>
           <h1>Our Best Pizza Ever</h1>
-          <p>Ready in 2 minutes</p>
+          <p>Ready in 5 minutes</p>
           <button>Place Order</button>
         </BodyItems>
       </BodyContent>
